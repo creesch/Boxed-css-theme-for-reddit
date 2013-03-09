@@ -1,55 +1,63 @@
 /* == Boxed reddit CSS Theme v1.0 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
- body {
+body {
     background-color: #C9D6E2;
     color: #333333 !important;
 }
 
 .hover.pagename.redditname > a:before {
-    content:"r/";
+    content: "r/";
 }
 
-input { 
-border: 1px solid #C1BFBF !important;
+input {
+    border: 1px solid #C1BFBF !important;
 }
+
 #sr-header-area {
     text-transform: lowercase;
     font-size: 100% !important;
 }
+
 #sr-header-area a {
     font-size: 100% !important;
 }
+
 #userbarToggle.userbarHide, #userbarToggle.userbarShow {
-background-color: #4D6277;
-color: #4D6277;
-width: 6px;   
-left: 0px; 
+    background-color: #4D6277;
+    color: #4D6277;
+    width: 6px;
+    left: 0px;
 }
+
 #header {
     border-bottom: 1px solid #9A9A9A !important;
-
 }
+
 #sr-header-area {
     background-color: #FAFAFA;
     color: #333333;
     border-bottom: 1px solid #9A9A9A !important;
 }
+
 #RESShortcutsEditContainer, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft, #sr-more-link {
     background-color: #FAFAFA!important;
 }
+
 #header-bottom-right {
     background-color: #FFFFFF;
     color: #333333;
     border: 0px solid #9A9A9A !important;
-    top:70px !important;
+    top: 70px !important;
     height: 12px !important;
     vertical-align: middle !important;
     padding: 2px 5px 10px 5px !important;
 }
+
 #header-bottom-right a {
     color: #333333;
 }
+
 .tabmenu li a {
     border: 1px solid #9A9A9A !important;
     background: #EFEFEF !important;
@@ -61,9 +69,11 @@ left: 0px;
     padding: 0px 12px;
     font-size: x-small;
 }
+
 .tabmenu li {
     margin: 1px;
 }
+
 .tabmenu li.selected a {
     border: 1px solid #9A9A9A !important;
     background: #C9D6E2 !important;
@@ -71,135 +81,155 @@ left: 0px;
     border-left: 3px solid #4D6277 !important;
     font-size: 100%;
 }
+
 .rounded {
     border-radius: 0px !important;
 }
+
 .roundfield, #REScommentSubToggle, #header-bottom-right, #userbarToggle {
     border-radius: 0px !important;
 }
+
 .roundfield, .content.submit .info-notice, .linefield {
-    background-color:#F5F5F5;
-    border-width:1px 0px;
-    border-style:solid;
+    background-color: #F5F5F5;
+    border-width: 1px 0px;
+    border-style: solid;
     border-color: #C1BFBF;
 }
+
 .entry {
     padding: 3px;
 }
+
 .keyHighlight {
     outline-width: 0px !important;
     background-color: transparent!important;
     padding: 3px;
 }
+
 .link.last-clicked {
     border: 0px !important;
 }
+
 a.title {
     color: #333 !important;
 }
+
 a.title:hover {
     color: #4D6277!important;
-    text-decoration: none !important
+    text-decoration: none !important;
 }
+
 a.title:visited {
-    color: #888 !important
+    color: #888 !important;
 }
+
 a.title:visited:hover {
     color: #4D6277 !important;
-    text-decoration: none !important
+    text-decoration: none !important;
 }
 
 
 /* Flair formatting flairs are labeld alphabetically  */
 
 
- .linkflair-a .linkflairlabel {
+.linkflair-a .linkflairlabel {
     width: 105px;
-    text-align:center;
+    text-align: center;
     background-color: #e18879;
     font-size: 9px;
     font-weight: bold;
     border-color: #4C4C4C;
     border-width: 1px;
-    border-radius: 0px
+    border-radius: 0px;
 }
- .linkflair-b .linkflairlabel {
+
+.linkflair-b .linkflairlabel {
     width: 105px;
-    text-align:center;
+    text-align: center;
     background-color: #e1aa79;
     font-size: 9px;
     font-weight: bold;
     border-color: #4C4C4C;
     border-width: 1px;
-    border-radius: 0px
+    border-radius: 0px;
 }
- .linkflair-c .linkflairlabel {
+
+.linkflair-c .linkflairlabel {
     width: 105px;
-    text-align:center;
+    text-align: center;
     background-color: #bbe179;
     font-size: 9px;
     font-weight: bold;
     border-color: #4C4C4C;
     border-width: 1px;
-    border-radius: 0px
+    border-radius: 0px;
 }
- .linkflair-d .linkflairlabel {
+
+.linkflair-d .linkflairlabel {
     width: 105px;
-    text-align:center;
+    text-align: center;
     background-color: #79e1d1;
     font-size: 9px;
     font-weight: bold;
     border-color: #4C4C4C;
     border-width: 1px;
-    border-radius: 0px
+    border-radius: 0px;
 }
+
 .linkflair-e .linkflairlabel {
     width: 105px;
-    text-align:center;
+    text-align: center;
     background-color: #e1db79;
     font-size: 9px;
     font-weight: bold;
     border-color: #4C4C4C;
     border-width: 1px;
-    border-radius: 0px
+    border-radius: 0px;
 }
- .linkflair-f .linkflairlabel {
+
+.linkflair-f .linkflairlabel {
     width: 105px;
-    text-align:center;
+    text-align: center;
     background-color: #b179e1;
     font-size: 9px;
     font-weight: bold;
     border-color: #4C4C4C;
     border-width: 1px;
-    border-radius: 0px
+    border-radius: 0px;
 }
- .linkflair-g .linkflairlabel {
+
+.linkflair-g .linkflairlabel {
     width: 105px;
-    text-align:center;
+    text-align: center;
     background-color: #FCDFFF;
     font-size: 9px;
     font-weight: bold;
     border-color: #4C4C4C;
     border-width: 1px;
-    border-radius: 0px
+    border-radius: 0px;
 }
 
 
 /* Listing of submissions */
- body div.content {
+body div.content {
     margin: 20px 350px 0px 5px !important;
     padding: 20px 0px 0px !important;
 }
+
 .rank {
-    display:none;
+    display: none;
 }
+
 .domain {
     display: none;
 }
+
 .link .midcol {
     margin-right: 0px;
     margin-left: 0px;
 }
+
 .linklisting {
     bottom: 0px;
     margin-top: 0px;
@@ -208,9 +238,11 @@ a.title:visited:hover {
     border: 1px solid #9A9A9A;
     margin-left: 20px;
 }
+
 .linklisting .odd:first-child {
     border-top: 0px none !important;
 }
+
 .linklisting .odd {
     overflow: hidden !important;
     margin: 0px !important;
@@ -219,6 +251,7 @@ a.title:visited:hover {
     background-color: #FAFAFA !important;
     min-height: 50px !important;
 }
+
 .linklisting .even {
     overflow: hidden !important;
     margin: 0px !important;
@@ -230,9 +263,10 @@ a.title:visited:hover {
 
 
 /* comments */
- .sitetable .comment {
+.sitetable .comment {
     border-radius: 0px !important;
 }
+
 .commentarea {
     margin-top: 20px;
     margin-left: 20px;
@@ -241,65 +275,73 @@ a.title:visited:hover {
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
 }
+
 .link .usertext .md {
     padding: 0px 5px;
     border: 1px solid #C1BFBF;
     border-radius: 0px !important;
 }
+
 .gold-accent, .infobar {
     border-radius: 0px !important;
     border-color: #C1BFBF;
     background-color: #F5F5F5;
     margin: 0px 10px 15px !important;
 }
+
 #noresults {
     margin-left: 10px !important;
 }
+
 .tagline .author.submitter {
     color: white !important;
     background-color: #0055df !important;
     font-weight: bold !important;
-	border-radius: 0px !important;
+    border-radius: 0px !important;
     padding: 0px 2px !important;
 }
-
 
 .tagline .author.moderator {
     color: white !important;
     background-color: #228822 !important;
     font-weight: bold !important;
-	border-radius: 0px !important;
+    border-radius: 0px !important;
     padding: 0px 2px !important;
 }
+
 .tagline .author.friend {
     color: white !important;
     background-color: #FF4500 !important;
     font-weight: bold !important;
-	border-radius: 0px !important;
+    border-radius: 0px !important;
     padding: 0px 2px !important;
 }
+
 .md blockquote {
-    display:block;
-    border:1px dashed #C1BFBF;
+    display: block;
+    border: 1px dashed #C1BFBF;
     border-left: 3px solid #336699;
     padding: 5px;
     margin: 3px 0px 3px 0px !important;
 }
+
 .md td, .md th {
     border: 1px solid #C1BFBF !important;
 }
 
 
 /* flair settings */
- .flair-settings.fancy-settings > h1 {
+.flair-settings.fancy-settings > h1 {
     margin: 0px 0px 5px 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
     padding: 5px;
 }
+
 .content .tabmenu {
     margin: 0px 0px 0px 20px !important;
 }
+
 .tabpane-content {
     padding: 5px;
     margin-top: 0px;
@@ -310,45 +352,51 @@ a.title:visited:hover {
 
 
 /* css settings */
- .pretty-form {
+.pretty-form {
     padding: 5px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
-    margin-left:20px;
+    margin-left: 20px;
 }
+
 #images {
     padding: 5px;
     margin-top: 5px;
-    margin-left:20px;
+    margin-left: 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
 }
 
 
 /* submitting  */
- #newlink {
+#newlink {
     padding: 5px;
     margin-top: 5px;
-    margin-left:20px;
+    margin-left: 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
 }
+
 #link-desc.infobar, #text-desc.infobar {
     display: none !important;
 }
+
 .content > h1 {
     margin: 0px 5px 5px 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
     padding: 5px;
 }
+
 .formtabs-content {
     border-top: 4px solid #C1BFBF !important;
     padding-top: 0px !important;
 }
+
 .formtabs-content div:nth-child(1), .formtabs-content div:nth-child(2) {
     margin: 0px !important;
 }
+
 li.selected a.link-button, li.selected a.text-button {
     border: 1px solid #9A9A9A !important;
     background: #C9D6E2 !important;
@@ -356,6 +404,7 @@ li.selected a.link-button, li.selected a.text-button {
     border-left: 3px solid #4D6277 !important;
     border-bottom: 0px !important;
 }
+
 a.link-button, a.text-button {
     border: 1px solid #9A9A9A !important;
     background: #EFEFEF !important;
@@ -365,22 +414,18 @@ a.link-button, a.text-button {
 
 
 /* Spoiler tags */
-a[href$="/spoiler"] {  
-    background: #4D6277 !important;  
+a[href$="/spoiler"] {
+    background: #4D6277 !important;
     color: #4D6277 !important;
     border: 1px solid #4D6277;
     padding-right: 1px;
-}  
+}
 
-
-
-a[href$="/spoiler"]:hover {  
-    color: #FFF !important; 
+a[href$="/spoiler"]:hover {
+    color: #FFF !important;
 }
 
 a[href$="/spoiler"]::before {
-
-
     background: #FFF !important;
     color: #000 !important;
     padding: 0px 1px;
@@ -388,77 +433,78 @@ a[href$="/spoiler"]::before {
     margin-right: 1px;
 }
 
-
 a[href$="/spoiler"]::before {
-
-
-
     content: "Spoiler";
 }
 
 a[href$="/spoiler"][title]::before {
     content: attr(title) " Spoiler";
-
 }
 
 /* Sidebar stuff */
 
 .login-form-side {
-    background-color:#F5F5F5;
-    border-width:3px 0px 3px 0px;
-    border-style:solid;
+    background-color: #F5F5F5;
+    border-width: 3px 0px 3px 0px;
+    border-style: solid;
     border-color: #C1BFBF;
-    
 }
 
- .side .bottom {
-    display:none !important;
+.side .bottom {
+    display: none !important;
 }
+
 #search {
-    text-align:center;
+    text-align: center;
 }
 
 #search input[type="text"] {
     border: 1px solid #C1BFBF;
-    }
+}
 
 .side .md {
     overflow: hidden;
 }
+
 .flat-vert.icon-menu.hover a {
     background-color: #F5F5F5 !important;
 }
+
 .side {
     width: 300px;
-    margin:40px 20px 40px auto;
+    margin: 40px 20px 40px auto;
     padding: 10px !important;
     z-index: 0;
     border: 1px solid #9A9A9A;
     overflow: hidden;
 }
+
 .side hr {
     visibility: hidden;
 }
+
 .side blockquote {
-    display:block;
-    background-color:#F5F5F5;
-    border-width:1px 0px;
-    border-style:solid;
+    display: block;
+    background-color: #F5F5F5;
+    border-width: 1px 0px;
+    border-style: solid;
     border-color: #C1BFBF;
     margin: 0px;
     margin-bottom: 5px;
     padding: 5px;
 }
+
 .sidecontentbox .content {
-    display:block;
-    background-color:#F5F5F5;
-    border-width:1px 0px;
-    border-style:solid;
+    display: block;
+    background-color: #F5F5F5;
+    border-width: 1px 0px;
+    border-style: solid;
     border-color: #C1BFBF;
     margin: 0px;
     margin-bottom: 5px;
     padding: 5px;
 }
+
 #searchexpando {
     border-radius: 0px !important;
     border-color: #C1BFBF;
@@ -467,7 +513,7 @@ a[href$="/spoiler"][title]::before {
 
 
 /* Link info*/
- .linkinfo {
+.linkinfo {
     background-color: white;
     color: #363636;
     text-align: center;
@@ -481,39 +527,47 @@ a[href$="/spoiler"][title]::before {
     margin-right: auto;
     border-radius: 0px !important;
 }
+
 .linkinfo .downvotes .number, .linkinfo .upvotes .number, .linkinfo .score .number {
     font-size: 20px !important;
     display: block;
     font-weight: normal !important;
 }
+
 .linkinfo .score .word {
     display: none;
 }
+
 .linkinfo .score {
     font-size: 11px;
     display: block;
     min-width: 80px;
     margin-left: 30px !important;
 }
+
 .linkinfo .downvotes .word, .linkinfo .upvotes .word {
     font-size: 11px;
 }
+
 .linkinfo .upvotes, .linkinfo .downvotes, .linkinfo .score {
     float: left;
     padding: 5px 10px 5px 0;
     margin: 8px 10px 10px 0;
     text-align: center;
 }
+
 .linkinfo .score, .linkinfo .upvotes {
     border-right: 1px solid #C1BFBF;
 }
+
 .linkinfo .shortlink {
     clear: both !important;
     font-size: 10px;
     margin: 0px 20px 0px 20px;
     border: 1px solid #E7E6E6;
-    text-align:center;
+    text-align: center;
 }
+
 .linkinfo .shortlink input {
     background: transparent;
     border: 0px;
@@ -522,6 +576,7 @@ a[href$="/spoiler"][title]::before {
     margin-left: auto;
     margin-right: auto;
 }
+
 .linkinfo .date {
     padding: 8px;
     margin-top: -10px;
@@ -533,70 +588,74 @@ a[href$="/spoiler"][title]::before {
 
 
 /* sidebar dropdown menus */
- .titlebox .md ul {
-    margin:0;
+.titlebox .md ul {
+    margin: 0;
 }
+
 .titlebox ul li {
-    background-color:#f2f2f2;
-    border:none;
-    color:black;
-    display:none;
-    padding:3px 3px 3px 13px;
-    text-align:left;
-    border-top:1px solid #CCCCCC;
+    background-color: #f2f2f2;
+    border: none;
+    color: black;
+    display: none;
+    padding: 3px 3px 3px 13px;
+    text-align: left;
+    border-top: 1px solid #CCCCCC;
     margin: 0px;
 }
+
 .titlebox ul li:hover {
-    background-color:#DDDDDD;
+    background-color: #DDDDDD;
 }
 
-.titlebox ul li:nth-child(1)
-{
-  display:block;
-  color:black;
-  background-color:#EFEFEF;
-  display:inline-block;
-
-  font-size:14px;
-  border: 0px;
-  border-bottom:1px dotted #888888;
-  border-left: 3px solid #4D6277;
-  padding: 2px;
-  width: 100%;
-  
+.titlebox ul li:nth-child(1) {
+    display: block;
+    color: black;
+    background-color: #EFEFEF;
+    display: inline-block;
+    font-size: 14px;
+    border: 0px;
+    border-bottom: 1px dotted #888888;
+    border-left: 3px solid #4D6277;
+    padding: 2px;
+    width: 100%;
 }
-
 
 .titlebox ul li:nth-child(1):hover {
-    color:black;
-    background-color:#C9D6E2;
+    color: black;
+    background-color: #C9D6E2;
 }
+
 .titlebox ul:hover > li {
-    display:block;
+    display: block;
 }
+
 .titlebox ul li a:hover {
-    color:black;
+    color: black;
 }
 
 
 /* sidebar submit buttons */
- .morelink .nub {
+.morelink .nub {
     background: none !important;
 }
+
 .morelink {
     border: 1px solid #C1BFBF;
     background: #EFEFEF !important;
     color: #333333;
     border-left: 3px solid #4D6277;
 }
+
 .morelink:hover {
     background: #C9D6E2 !important;
     border-color: #C1BFBF;
     border-left: 3px solid #4D6277;
 }
+
 .morelink a {
     color: #333333;
 }
+
 .morelink:hover a {
     text-decoration: none !important;
     color: #333333;
