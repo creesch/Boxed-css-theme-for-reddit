@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.0 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.1 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
 body {
@@ -218,10 +218,6 @@ body div.content {
 }
 
 .rank {
-    display: none;
-}
-
-.domain {
     display: none;
 }
 
@@ -882,4 +878,4 @@ a[href$="/spoiler"][title]::before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.0 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.1 - (http://www.reddit.com/r/boxed/)== */
