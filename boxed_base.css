@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.1 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.1.1 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
 body {
@@ -232,6 +232,7 @@ body div.content {
     padding: 0px !important;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
     margin-left: 20px;
 }
 
@@ -270,6 +271,7 @@ body div.content {
     padding: 7px 0px !important;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
 }
 
 .link .usertext .md {
@@ -331,6 +333,7 @@ body div.content {
     margin: 0px 0px 5px 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
     padding: 5px;
 }
 
@@ -344,6 +347,7 @@ body div.content {
     margin-left: 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
 }
 
 
@@ -352,6 +356,7 @@ body div.content {
     padding: 5px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
     margin-left: 20px;
 }
 
@@ -361,6 +366,7 @@ body div.content {
     margin-left: 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
 }
 
 
@@ -371,6 +377,7 @@ body div.content {
     margin-left: 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
 }
 
 #link-desc.infobar, #text-desc.infobar {
@@ -381,6 +388,7 @@ body div.content {
     margin: 0px 5px 5px 20px;
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
     padding: 5px;
 }
 
@@ -410,18 +418,18 @@ a.link-button, a.text-button {
 
 
 /* Spoiler tags */
-a[href$="/spoiler"] {
+a[href$="#spoiler"] {
     background: #4D6277 !important;
     color: #4D6277 !important;
     border: 1px solid #4D6277;
     padding-right: 1px;
 }
 
-a[href$="/spoiler"]:hover {
+a[href$="#spoiler"]:hover {
     color: #FFF !important;
 }
 
-a[href$="/spoiler"]::before {
+a[href$="#spoiler"]::before {
     background: #FFF !important;
     color: #000 !important;
     padding: 0px 1px;
@@ -429,11 +437,11 @@ a[href$="/spoiler"]::before {
     margin-right: 1px;
 }
 
-a[href$="/spoiler"]::before {
+a[href$="#spoiler"]::before {
     content: "Spoiler";
 }
 
-a[href$="/spoiler"][title]::before {
+a[href$="#spoiler"][title]::before {
     content: attr(title) " Spoiler";
 }
 
@@ -472,6 +480,7 @@ a[href$="/spoiler"][title]::before {
     padding: 10px !important;
     z-index: 0;
     border: 1px solid #9A9A9A;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
     overflow: hidden;
 }
 
@@ -836,6 +845,7 @@ a[href$="/spoiler"][title]::before {
     left:0;
     display:block;
     border-bottom:1px solid #9A9A9A;
+	box-shadow: 0px 1px 3px 1px #A5B9CE;
     background:#FFFFFF;
     text-align:left;
     font-size:15px;
@@ -850,6 +860,7 @@ a[href$="/spoiler"][title]::before {
  .wiki-page .content span:first-child:not(.separator):not(.score):not(.linkflair) {
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+	box-shadow: 0px 1px 3px 1px #A5B9CE;
     padding: 5px;
     margin: 0px 0px 0px 20px !important;
     display: block;
@@ -857,6 +868,7 @@ a[href$="/spoiler"][title]::before {
 .wiki-page-content {
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
+	box-shadow: 0px 1px 3px 1px #A5B9CE;
     padding: 5px;
     margin: 5px 0px 0px 20px !important;
 }
@@ -878,4 +890,4 @@ a[href$="/spoiler"][title]::before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.1 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.1.1 - (http://www.reddit.com/r/boxed/)== */
