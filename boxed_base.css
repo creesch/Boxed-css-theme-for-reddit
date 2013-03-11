@@ -3,7 +3,7 @@
 /* General markup */
 body {
     background-color: #C9D6E2;
-    color: #333333 !important;
+    color: #000000 !important;
 }
 
 .hover.pagename.redditname > a:before {
