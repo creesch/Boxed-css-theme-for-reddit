@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.1.1 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.1.2 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
 body {
@@ -317,10 +317,15 @@ body div.content {
 
 .md blockquote {
     display: block;
-    border: 1px dashed #C1BFBF;
-    border-left: 3px solid #336699;
+    background-color: #F5F5F5;
+    border-style: solid;
+    border-width: 1px 1px 1px 3px;       
+    border-color: #C1BFBF;
+    border-left-color: #4D6277;
+    box-shadow: 0px 1px 3px 1px #F5F5F5;
     padding: 5px;
     margin: 3px 0px 3px 0px !important;
+    color: #333333;
 }
 
 .md td, .md th {
@@ -857,7 +862,7 @@ a[href$="#spoiler"][title]::before {
 }
 
 /* wiki formatting */
- .wiki-page .content span:first-child:not(.separator):not(.score):not(.linkflair) {
+ .wiki-page .content span:first-child:not(.separator):not(.score):not(.linkflair):not(.diff_chg):not(.author):not(.diff_add):not(.diff_sub):not(.diff_next):not(.diff_header) {
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
 	box-shadow: 0px 1px 3px 1px #A5B9CE;
@@ -880,6 +885,10 @@ a[href$="#spoiler"][title]::before {
 }
 .wiki-page .wiki-page-content .md.wiki > .toc > ul {
     margin:0px !important;
+	background-color: #F5F5F5;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #C1BFBF;
 }
 .toc a {
     font-size: small !important;
@@ -890,4 +899,7 @@ a[href$="#spoiler"][title]::before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.1.1 - (http://www.reddit.com/r/boxed/)== */
+
+
+
+/* ==Boxed reddit CSS Theme v1.1.2 - (http://www.reddit.com/r/boxed/)== */
