@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.1.3 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.1.4 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
 body {
@@ -940,5 +940,7 @@ a[href$="#spoiler"][title]::before {
 	border-color: #C1BFBF;
 }
 
+/* reddit companion + sticky announcements fix */
+html { position: relative; }
 
 /* ==Boxed reddit CSS Theme v1.1.3 - (http://www.reddit.com/r/boxed/)== */
