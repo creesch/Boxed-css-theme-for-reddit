@@ -1,13 +1,15 @@
-/* == Boxed reddit CSS Theme v1.1.5 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.1.6 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
 
 /* reddit companion + sticky announcements fix */
-html { position: relative; }
+html {
+    position: relative;
+}
 
 body {
     background-color: #C9D6E2;
-    color: #000000 !important;
+    color: #000000;
 }
 
 * {
@@ -44,7 +46,7 @@ input {
 .keyHighlight {
     outline-width: 0px !important;
     background-color: transparent!important;
-    padding: 3px;
+    border-right: 1px solid #858585!important;
 }
 
 .link.last-clicked {
@@ -98,7 +100,7 @@ a.title:visited:hover {
 }
 
 #RESShortcutsEditContainer, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft, #sr-more-link {
-    background-color: #FAFAFA!important;
+    background-color: #FAFAFA;
 }
 
 #header-bottom-right {
@@ -120,8 +122,8 @@ a.title:visited:hover {
 
 .tabmenu li a {
     border: 1px solid #9A9A9A !important;
-    background: #EFEFEF !important;
-    color: #333333 !important;
+    background: #EFEFEF;
+    color: #333333;
     border-left: 3px solid #4D6277 !important;
     border-bottom: 0px !important;
     margin: 0px !important;
@@ -136,8 +138,8 @@ a.title:visited:hover {
 
 .tabmenu li.selected a {
     border: 1px solid #9A9A9A !important;
-    background: #C9D6E2 !important;
-    color: #333333 !important;
+    background: #C9D6E2;
+    color: #333333;
     border-left: 3px solid #4D6277 !important;
     font-size: 100%;
 }
@@ -256,7 +258,7 @@ body div.content {
     margin: 0px !important;
     padding: 5px 5px 10px 10px !important;
     border-top: 1px solid #EEEEEE;
-    background-color: #FAFAFA !important;
+    background-color: #FAFAFA;
     min-height: 50px !important;
 }
 
@@ -265,7 +267,7 @@ body div.content {
     margin: 0px !important;
     padding: 5px 5px 5px 10px !important;
     border-top: 1px solid #EEEEEE;
-    background-color: #F5F5F5 !important;
+    background-color: #F5F5F5;
     min-height: 50px !important;
 }
 
@@ -277,10 +279,9 @@ body div.content {
     box-shadow: 0px 1px 3px 1px #A5B9CE;
     width: 97% !important;
     margin-top: 5px !important;
-    background-color: #F5F5F5 !important;
+    background-color: #F5F5F5;
     border-color: #C1BFBF !important;
 }
-
 
 .linklisting .linklisting {
     margin-left: 0px !important;
@@ -289,18 +290,17 @@ body div.content {
 }
 
 .NERPageMarker {
-    background-color: #F5F5F5 !important;
+    background-color: #F5F5F5;
     border-width: 1px 0px !important;
     border-style: solid none !important;
     border-color: #C1BFBF !important;
     border-radius: 0px !important;
-
 }
 
 #NERFail {
     width: 99% !important;
     height: auto !important;
-	border-width: 0px !important;
+    border-width: 0px !important;
 }
 
 
@@ -309,33 +309,27 @@ body div.content {
     border-radius: 0px !important;
 }
 
-.md h1, .commentarea h1 { 
+.md h1, .commentarea h1 {
     padding-bottom: 3px;
     border-bottom: 1px dotted #C1BFBF;
-    
-font-weight: bold;
-    
+    font-weight: bold;
 }
 
-
-.md h2, .commentarea h2 { 
+.md h2, .commentarea h2 {
     padding-bottom: 3px;
     border-bottom: 1px dotted #C1BFBF;
     font-weight: bold;
     font-size: 115% !important;
-    
 }
 
-
-.md h3, .commentarea h3 { 
+.md h3, .commentarea h3 {
     padding-bottom: 3px;
     border-bottom: 1px dotted #C1BFBF;
     font-weight: bold;
-font-size: 130% !important;
-    
+    font-size: 130% !important;
 }
 
-.md pre code { 
+.md pre code {
     display: block;
     background-color: #F5F5F5;
     border-style: solid;
@@ -344,8 +338,9 @@ font-size: 130% !important;
     box-shadow: 0px 1px 3px 1px #F5F5F5;
     padding: 5px;
     color: #333333;
-margin-top: 2px;
+    margin-top: 2px;
 }
+
 .commentarea {
     margin-top: 20px;
     margin-left: 20px;
@@ -457,26 +452,27 @@ margin-top: 2px;
 }
 
 /* Custom stylesheet */
-.stylesheet-customize-container { 
+.stylesheet-customize-container {
     width: 100%;
 }
+
 #stylesheet_contents {
     padding-left: 5px;
     padding-top: 5px;
     background-color: white;
     color: #4D6277;
-    height: 500px
+    height: 500px;
 }
 
-
-#subreddit_stylesheet { 
-    display: block; 
+#subreddit_stylesheet {
+    display: block;
     overflow: hidden;
 }
 
-.sheets { 
+.sheets {
     margin: 0;
 }
+
 /* submitting  */
 #newlink {
     padding: 5px;
@@ -779,9 +775,11 @@ a[href$="#spoiler"][title]::before {
     color:#000!important;
     cursor:default;
 }
+
 .side a[href*='#icon-']:hover {
     text-decoration:none;
 }
+
 .side a[href*='#icon-']::before {
     display:inline-block;
     height:16px;
@@ -850,6 +848,7 @@ a[href$="#spoiler"][title]::before {
     margin: 5px 0px 0px 0px;
     padding: 5px;
 }
+
 .titlebox .fancy-toggle-button {
     display:block;
     background-color:#F5F5F5;
@@ -859,15 +858,17 @@ a[href$="#spoiler"][title]::before {
     width: 290px;
     overflow: hidden;
 }
+
 .subButtons {
     width: 300px;
     padding: 0px;
     height: 55px;
     display:block;
-    background-color:#F5F5F5 !important;
+    background-color:#F5F5F5;
     border-width:0px;
     margin: 0px;
 }
+
 .styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.leavecontributor-button {
     display:block;
     background-color:#F5F5F5 !important;
@@ -875,6 +876,7 @@ a[href$="#spoiler"][title]::before {
     margin: 0px;
     padding: 5px;
 }
+
 .side .tagline {
     display:block;
     background-color:#F5F5F5;
@@ -887,7 +889,7 @@ a[href$="#spoiler"][title]::before {
 
 .side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body) {
     display:block !important;
-    background-color:#F5F5F5 !important;
+    background-color:#F5F5F5;
     margin: 0px !important;
     padding: 5px !important;
 }
@@ -896,7 +898,7 @@ a[href$="#spoiler"][title]::before {
 
 .side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body) {
     display:block !important;
-    background-color:#F5F5F5 !important;
+    background-color:#F5F5F5;
     border: 0px !important;
     margin: 0px !important;
     padding: 5px !important;
@@ -909,11 +911,13 @@ a[href$="#spoiler"][title]::before {
     background-color: #DD513B;
     border-radius: 0px !important;
 }
+
 .fancy-toggle-button .add {
     background-image: none;
     background-color: #4D6277;
     border-radius: 0px !important;
 }
+
 .RESshortcutside, .RESDashboardToggle {
     color: white;
     background-image: none !important;
@@ -922,6 +926,7 @@ a[href$="#spoiler"][title]::before {
     border-radius: 0px !important;
     margin-left: 5px;
 }
+
 .RESshortcutside:hover, .RESDashboardToggle :hover {
     color: white;
     background-image: none !important;
@@ -929,6 +934,7 @@ a[href$="#spoiler"][title]::before {
     background-color: #4D6277 !important;
     border-radius: 0px !important;
 }
+
 .RESshortcutside.remove, .RESDashboardToggle.remove {
     color: white;
     background-image: none !important;
@@ -936,6 +942,7 @@ a[href$="#spoiler"][title]::before {
     background-color: #DD513B;
     border-radius: 0px !important;
 }
+
 .RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover {
     color: white;
     background-image: none !important;
@@ -943,7 +950,6 @@ a[href$="#spoiler"][title]::before {
     background-color: #DD513B !important;
     border-radius: 0px !important;
 }
-
 
 /* Sticky, edit text in the sidebar  */
  .side .md h3:nth-of-type(1) {
@@ -972,6 +978,7 @@ a[href$="#spoiler"][title]::before {
     margin: 0px 0px 0px 20px !important;
     display: block;
 }
+
 .wiki-page-content {
     background-color: #FFFFFF;
     border: 1px solid #9A9A9A;
@@ -979,12 +986,15 @@ a[href$="#spoiler"][title]::before {
     padding: 5px;
     margin: 5px 0px 0px 20px !important;
 }
+
 .wiki-page .pageactions {
     border: 0px !important;
 }
+
 .wikiaction {
     border-radius: 0px !important;
 }
+
 .wiki-page .wiki-page-content .md.wiki > .toc > ul {
     margin:0px !important;
 	background-color: #F5F5F5;
@@ -992,13 +1002,15 @@ a[href$="#spoiler"][title]::before {
     border-style: solid;
     border-color: #C1BFBF;
 }
+
 .toc a {
     font-size: small !important;
 }
+
 .toc {
     float: right;
     max-width: 40%;
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.1.4 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.1.6 - (http://www.reddit.com/r/boxed/)== */
