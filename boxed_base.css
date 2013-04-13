@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.1.6 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.1.7 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
 
@@ -43,7 +43,7 @@ input {
     padding: 3px;
 }
 
-.keyHighlight {
+.keyHighlight, .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
     outline-width: 0px !important;
     background-color: transparent!important;
     border-right: 1px solid #858585!important;
@@ -99,8 +99,8 @@ a.title:visited:hover {
     border-bottom: 1px solid #9A9A9A !important;
 }
 
-#RESShortcutsEditContainer, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft, #sr-more-link {
-    background-color: #FAFAFA;
+#RESShortcutsEditContainer, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft, #sr-more-link, #RESShortcutsSort {
+    background-color: #FAFAFA !important;
 }
 
 #header-bottom-right {
@@ -715,7 +715,7 @@ a[href$="#spoiler"][title]::before {
     background-color: #DDDDDD;
 }
 
-.titlebox ul li:nth-child(1) {
+.titlebox ul li:nth-child(1):not(.flairsample-left) {
     display: block;
     color: black;
     background-color: #EFEFEF;
@@ -728,7 +728,7 @@ a[href$="#spoiler"][title]::before {
     width: 100%;
 }
 
-.titlebox ul li:nth-child(1):hover {
+.titlebox ul li:nth-child(1):not(.flairsample-left):hover {
     color: black;
     background-color: #C9D6E2;
 }
@@ -1013,4 +1013,4 @@ a[href$="#spoiler"][title]::before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.1.6 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.1.7 - (http://www.reddit.com/r/boxed/)== */
