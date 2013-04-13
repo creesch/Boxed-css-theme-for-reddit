@@ -43,11 +43,14 @@ input {
     padding: 3px;
 }
 
-.keyHighlight, .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+.keyHighlight, .link .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement.entry .noncollapsed  {
     outline-width: 0px !important;
     background-color: transparent!important;
     border-right: 1px solid #858585!important;
 }
+
+
+
 
 .link.last-clicked {
     border: 0px !important;
