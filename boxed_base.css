@@ -769,7 +769,7 @@ a[href$="#spoiler"][title]::before {
 
 .linkinfo .shortlink input {
     background: transparent;
-    border: 0px;
+    border: 0px !important;
     padding-left: 8px;
     font-size: 12px;
     margin-left: auto;
