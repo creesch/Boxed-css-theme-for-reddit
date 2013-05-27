@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.1.7 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.2 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
 
@@ -43,14 +43,11 @@ input {
     padding: 3px;
 }
 
-.keyHighlight, .link .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement.entry .noncollapsed  {
+.keyHighlight, .RES-keyNav-activeElement, div .RES-keyNav-activeElement {
     outline-width: 0px !important;
     background-color: transparent!important;
     border-right: 1px solid #858585!important;
 }
-
-
-
 
 .link.last-clicked {
     border: 0px !important;
@@ -124,7 +121,7 @@ a.title:visited:hover {
 /* Header tab menu */
 
 .tabmenu li a {
-    border: 1px solid #9A9A9A !important;
+    border: 0 !important;
     background: #EFEFEF;
     color: #333333;
     border-left: 3px solid #4D6277 !important;
@@ -140,7 +137,7 @@ a.title:visited:hover {
 }
 
 .tabmenu li.selected a {
-    border: 1px solid #9A9A9A !important;
+    border: 0 !important;
     background: #C9D6E2;
     color: #333333;
     border-left: 3px solid #4D6277 !important;
@@ -247,7 +244,7 @@ body div.content {
     margin-top: 0px;
     padding: 0px !important;
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0 !important;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
     margin-left: 20px;
 }
@@ -332,32 +329,19 @@ body div.content {
     font-size: 130% !important;
 }
 
-.md pre code {
-    display: block;
-    background-color: #F5F5F5;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #C1BFBF;
-    box-shadow: 0px 1px 3px 1px #F5F5F5;
-    padding: 5px;
-    color: #333333;
-    margin-top: 2px;
-}
-
 .commentarea {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: auto;
     padding: 7px 0px !important;
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
 }
 
 .link .usertext .md {
     padding: 0px 5px;
-    border: 1px solid #C1BFBF;
-    border-radius: 0px !important;
+    border: 0;    
 }
 
 .gold-accent, .infobar {
@@ -371,6 +355,51 @@ body div.content {
     margin-left: 10px !important;
 }
 
+/* code numbering, based on the css found at /r/modtools */
+.md pre
+{
+    background-color: #F5F5F5 !important;
+    border-left:31px solid #4D6277;
+    position:relative;
+    margin-top:25px;
+    line-height: 15px;
+    font-family:"Courier New",courier,monospace;
+    box-shadow: 0px 1px 3px 1px #F5F5F5;
+
+}
+.md pre code
+{
+    padding:15px;
+    overflow:auto;
+    display:block;
+    line-height: 15px;
+    font-family:"Courier New",courier,monospace;
+}
+
+
+.md pre:after
+{
+    position:absolute;
+    content:"code:";
+    color:gray;
+    top:-20px;
+    left:-30px;
+}
+
+.md pre:before
+{
+    height:100%;
+    color:white;
+    position:absolute;
+    left:-28px;
+    width:25px;
+    white-space: pre-wrap;
+    direction:rtl;
+    overflow:hidden;
+    content:"#   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250";
+}
+
+/* Make distinguished users stand out more (mods, op and friends) */
 .tagline .author.submitter {
     color: white !important;
     background-color: #0055df !important;
@@ -395,29 +424,87 @@ body div.content {
     padding: 0px 2px !important;
 }
 
-.md blockquote {
+/* nested commentary boxes, credits for this piece of code go to someone else */
+
+.comment .child, .comment .showreplies {
+border-left: 0px !important;
+}
+
+.comment {
+    margin-left: 10px !important;
+    margin-right: 5px!important;
+    margin-top: 0!important;
+    margin-bottom: 8px !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e6e6e6 !important;
+    padding: 5px 8px 0 5px!important;
+}
+
+.comment .comment {
+    margin-right: 0px !important;
+    background-color: #F5F5F5!important 
+}
+.comment .comment .comment, .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #ffffff !important
+}
+.comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #F7F7F8 !important;
+}
+
+/* comment quotes */
+
+#siteTable blockquote:before, .noncollapsed .usertext blockquote:before {
+    content: '“';
+    font-size: 250%;
+    font-family: Georgia, serif;
+    margin: 0;
+    position: relative;
+    line-height: 5px;
+    top: 10px;
+    opacity: 0.2;
+}
+
+#siteTable blockquote, .noncollapsed .usertext blockquote p {
+    margin: 0;
+    font-size: 90%;
+}
+
+#siteTable blockquote:after, .noncollapsed .usertext blockquote:after {
+    content: '”';
+    font-size: 250%;
+    font-family: Georgia, serif;
+    text-align: right;
+    width: 98%;
+    display: block;
+    line-height: 10px;
+    opacity: 0.2;
+    position: relative;
+    top: 10px;
+}
+
+#siteTable blockquote, .noncollapsed .usertext blockquote {
     display: block;
     background-color: #F5F5F5;
     border-style: solid;
     border-width: 1px 1px 1px 3px;
     border-color: #C1BFBF;
-    border-left-color: #4D6277;
-    box-shadow: 0px 1px 3px 1px #F5F5F5;
+    margin: 5px !important;
     padding: 5px;
-    margin: 3px 0px 3px 0px !important;
+    box-shadow: 0px 1px 3px 1px #F5F5F5;
     color: #333333;
 }
+
+/* table comment borders */
 
 .md td, .md th {
     border: 1px solid #C1BFBF !important;
 }
 
-
 /* flair settings */
 .flair-settings.fancy-settings > h1 {
     margin: 0px 0px 5px 20px;
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
     padding: 5px;
 }
@@ -431,7 +518,7 @@ body div.content {
     margin-top: 0px;
     margin-left: 20px;
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
 }
 
@@ -440,7 +527,7 @@ body div.content {
 .pretty-form {
     padding: 5px;
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
     margin-left: 20px;
 }
@@ -450,7 +537,7 @@ body div.content {
     margin-top: 5px;
     margin-left: 20px;
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
 }
 
@@ -464,7 +551,7 @@ body div.content {
     padding-top: 5px;
     background-color: white;
     color: #4D6277;
-    height: 500px;
+    height: 500px;    
 }
 
 #subreddit_stylesheet {
@@ -482,7 +569,7 @@ body div.content {
     margin-top: 5px;
     margin-left: 20px;
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
 }
 
@@ -493,7 +580,7 @@ body div.content {
 .content > h1 {
     margin: 0px 5px 5px 20px;
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
     padding: 5px;
 }
@@ -508,7 +595,7 @@ body div.content {
 }
 
 li.selected a.link-button, li.selected a.text-button {
-    border: 1px solid #9A9A9A !important;
+    border: 0 !important;
     background: #C9D6E2 !important;
     color: #333333 !important;
     border-left: 3px solid #4D6277 !important;
@@ -516,7 +603,7 @@ li.selected a.link-button, li.selected a.text-button {
 }
 
 a.link-button, a.text-button {
-    border: 1px solid #9A9A9A !important;
+    border: 0 !important;
     background: #EFEFEF !important;
     color: #333333 !important;
     border-left: 3px solid #4D6277 !important;
@@ -583,9 +670,9 @@ a[href$="#spoiler"][title]::before {
 .side {
     width: 300px;
     margin: 40px 20px 40px auto;
-    padding: 10px !important;
+    padding: 5px !important;
     z-index: 0;
-    border: 1px solid #9A9A9A;
+    border: 0;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
     overflow: hidden;
 }
@@ -603,6 +690,7 @@ a[href$="#spoiler"][title]::before {
     margin: 0px;
     margin-bottom: 5px;
     padding: 5px;
+    box-shadow: 0px 1px 3px 1px #F5F5F5;
 }
 
 .sidecontentbox .content {
@@ -630,7 +718,7 @@ a[href$="#spoiler"][title]::before {
     text-align: center;
     font-size: 11px;
     padding: 10px 0px 15px 0px;
-    border: 1px solid #C1BFBF;
+    border: 0;
     width: 300px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -751,7 +839,7 @@ a[href$="#spoiler"][title]::before {
 }
 
 .morelink {
-    border: 1px solid #C1BFBF;
+    border: 0;
     background: #EFEFEF !important;
     color: #333333;
     border-left: 3px solid #4D6277;
@@ -893,17 +981,8 @@ a[href$="#spoiler"][title]::before {
 .side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body) {
     display:block !important;
     background-color:#F5F5F5;
-    margin: 0px !important;
-    padding: 5px !important;
-}
-
-
-
-.side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body) {
-    display:block !important;
-    background-color:#F5F5F5;
-    border: 0px !important;
-    margin: 0px !important;
+    border: 0 !important;
+    margin: 0 !important;
     padding: 5px !important;
 }
 
@@ -960,7 +1039,7 @@ a[href$="#spoiler"][title]::before {
     top:65px;
     left:0;
     display:block;
-    border-bottom:1px solid #9A9A9A;
+    border-bottom:0;
 	box-shadow: 0px 1px 3px 1px #A5B9CE;
     background:#FFFFFF;
     text-align:left;
@@ -975,7 +1054,7 @@ a[href$="#spoiler"][title]::before {
 /* wiki formatting */
  .wiki-page .content span:first-child:not(.separator):not(.score):not(.linkflair):not(.diff_chg):not(.author):not(.diff_add):not(.diff_sub):not(.diff_next):not(.diff_header) {
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
 	box-shadow: 0px 1px 3px 1px #A5B9CE;
     padding: 5px;
     margin: 0px 0px 0px 20px !important;
@@ -984,7 +1063,7 @@ a[href$="#spoiler"][title]::before {
 
 .wiki-page-content {
     background-color: #FFFFFF;
-    border: 1px solid #9A9A9A;
+    border: 0;
 	box-shadow: 0px 1px 3px 1px #A5B9CE;
     padding: 5px;
     margin: 5px 0px 0px 20px !important;
@@ -1016,4 +1095,4 @@ a[href$="#spoiler"][title]::before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.1.7 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.2 - (http://www.reddit.com/r/boxed/)== */
