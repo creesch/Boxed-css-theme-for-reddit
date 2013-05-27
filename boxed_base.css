@@ -358,7 +358,7 @@ body div.content {
 /* code numbering, based on the css found at /r/modtools */
 .md pre
 {
-    background-color: #F5F5F5 !important;
+    background-color: #d3d3d3 !important;
     border-left:31px solid #4D6277;
     position:relative;
     margin-top:25px;
