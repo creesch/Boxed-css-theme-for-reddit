@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.2 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.2.1 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
 
@@ -427,7 +427,7 @@ body div.content {
 /* nested commentary boxes, credits for this piece of code go to someone else */
 
 .comment .child, .comment .showreplies {
-border-left: 0px !important;
+    border-left: 0px !important;
 }
 
 .comment {
@@ -440,15 +440,22 @@ border-left: 0px !important;
     padding: 5px 8px 0 5px!important;
 }
 
-.comment .comment {
-    margin-right: 0px !important;
-    background-color: #F5F5F5!important 
-}
-.comment .comment .comment, .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background-color: #ffffff !important
-}
-.comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background-color: #F7F7F8 !important;
+.comment,
+.comment .comment .comment,
+.comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment
+ {
+background-color:#fff !important;
+    }
+	
+.comment .comment,
+.comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+{
+background-color:#F7F7F8!important;
 }
 
 /* comment quotes */
@@ -1095,4 +1102,4 @@ a[href$="#spoiler"][title]::before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.2 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.2.1 - (http://www.reddit.com/r/boxed/)== */
