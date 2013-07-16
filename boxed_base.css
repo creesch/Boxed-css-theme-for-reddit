@@ -335,6 +335,10 @@ body div.content {
 	margin-left: 20px;
 }
 
+.linklisting .odd:first-child {
+	border-top: 0px none !important;
+}
+
 .linklisting .odd {
 	overflow: hidden !important;
 	margin: 0px 20px 0px 0px!important;
@@ -830,9 +834,6 @@ a[href$="#spoiler"][title]::before {
 	border: 0;
 	box-shadow: 0px 1px 3px 1px #A5B9CE;
 	overflow: hidden;
-}
-
-body div.side {
 }
 
 .side hr {
