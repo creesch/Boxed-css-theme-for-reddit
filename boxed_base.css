@@ -96,6 +96,10 @@ body .content .sitetable .thing.spam, body .sitetable .thing.spam.deleted.link.s
 border: solid 2px #FA8072 !important;
 }
 
+body .content .sitetable .thing.spam, body .sitetable .thing.spam.deleted.link.self{
+border: solid 2px #FA8072 !important;
+}
+
 .keyHighlight, .RES-keyNav-activeElement, div .RES-keyNav-activeElement {
 	outline-width: 0px !important;
 	background-color: transparent!important;
