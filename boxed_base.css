@@ -411,7 +411,7 @@ body div.content {
 	overflow: auto;
 }
 
-.commentarea .menuarea {
+.commentarea .menuarea, .commentarea .infobar {
 	margin: 0 !important;
 	border: none;
 	color: #808080;
