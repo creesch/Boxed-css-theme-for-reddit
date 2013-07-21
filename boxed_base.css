@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.4 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.4.2 - (http://www.reddit.com/r/boxed/)== */
 
 /* Things adjusted for usage with segoe UI. This section can be removed, the theme will then fall back on reddit's default font types.  */
 
@@ -304,20 +304,7 @@ a.title:visited:hover {
 }
 
 .link .entry li .comments {
-	visibility: visible;
 	font-weight: bold;
-}
-
-#siteTable div.thing ul {
-	visibility: hidden;
-}
-
-#siteTable div.thing:hover ul {
-	visibility: visible;
-}
-
-.link .usertext .md ul {
-	visibility: visible!important;
 }
 
 body div.content {
@@ -1289,4 +1276,4 @@ div.wiki div.toc>ul:before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.4 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.4.2 - (http://www.reddit.com/r/boxed/)== */
