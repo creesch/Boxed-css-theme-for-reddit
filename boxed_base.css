@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.4.2 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.4.3 - (http://www.reddit.com/r/boxed/)== */
 
 /* Things adjusted for usage with segoe UI. This section can be removed, the theme will then fall back on reddit's default font types.  */
 
@@ -155,6 +155,7 @@ a.title:visited:hover {
 
 #header {
 	border-bottom: 1px solid #9A9A9A !important;
+    box-shadow: 0px 1px 3px 1px #B3C2D1;
 }
 
 #sr-header-area {
@@ -171,11 +172,12 @@ a.title:visited:hover {
 	background-color: #FFFFFF;
 	color: #333333;
 	border: 0px solid #9A9A9A !important;
-	top: 68px !important;
+	top: 76px !important;
 	height: 21px !important;
 	line-height: 21px !important;
 	vertical-align: middle !important;
-	padding: 6px 33px 4px 5px !important;
+	padding: 6px 3px 4px 5px !important;
+        margin-right: 20px;
 }
 
 #header-bottom-right a {
@@ -186,12 +188,11 @@ a.title:visited:hover {
 	top: 1px !important;
 }
 
-
 /* Header tab menu */
 
-.tabmenu li a {
+#header-bottom-left  .tabmenu li a {
 	border: 0 !important;
-	background: #EFEFEF;
+	background: #FFF;
 	color: #333333;
 	border-left: 3px solid #4D6277 !important;
 	border-bottom: 0px !important;
@@ -201,13 +202,13 @@ a.title:visited:hover {
 	font-size: x-small;
 }
 
-.tabmenu li {
+#header-bottom-left  .tabmenu li {
 	margin: 1px;
 }
 
-.tabmenu li.selected a {
+#header-bottom-left  .tabmenu li.selected a {
 	border: 0 !important;
-	background: #C9D6E2;
+	background: #EFEFEF;
 	color: #333333;
 	border-left: 3px solid #4D6277 !important;
 	font-size: 100%;
@@ -372,12 +373,13 @@ body div.content {
 	box-shadow: none !important;
 }
 
-.NERPageMarker {
-	background-color: #F5F5F5;
-	border-width: 1px 0px !important;
-	border-style: solid none !important;
-	border-color: #C1BFBF !important;
+.NERPageMarker, body .content #progressIndicator {
+	background-color: #F5F5F5 !important;
+	border: 0 !important;
 	border-radius: 0px !important;
+        margin-right: 20px !important;
+        box-shadow: 0px 1px 3px 1px #A5B9CE !important;
+        width: auto !important;
 }
 
 #NERFail {
@@ -823,7 +825,7 @@ a[href$="#spoiler"][title]::before {
 
 .side {
 	width: 300px;
-	margin: 50px 20px 20px 20px;
+	margin: 50px 20px 20px 10px;
 	padding: 5px !important;
 	z-index: 0;
 	border: 0;
@@ -1190,19 +1192,18 @@ a[href$="#spoiler"][title]::before {
 /* Sticky, edit text in the sidebar  */
  .side .md h3:nth-of-type(1) {
     position:absolute;
-    top:65px;
-    left:0;
+    top:75px;
+    left:25px;
     display:block;
     border-bottom:0;
-	box-shadow: 0px 1px 3px 1px #A5B9CE;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
     background:#FFFFFF;
     text-align:left;
     font-size:15px;
     color:#333333;
     font-weight:bold;
     padding:7px 7px 7px 27px;
-    left: 0px;
-    right: 0px;
+    right: 20px;
 }
 
 /* wiki formatting */
@@ -1276,4 +1277,4 @@ div.wiki div.toc>ul:before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.4.2 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.4.3 - (http://www.reddit.com/r/boxed/)== */
