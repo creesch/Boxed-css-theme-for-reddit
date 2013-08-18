@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.4.3 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.4.4 - (http://www.reddit.com/r/boxed/)== */
 
 /* Things adjusted for usage with segoe UI. This section can be removed, the theme will then fall back on reddit's default font types.  */
 
@@ -90,6 +90,9 @@ input {
 
 .entry {
 	padding: 3px;
+
+        border-right: 1px solid;
+        border-color: transparent;
 }
 
 body .content .sitetable .thing.spam, body .sitetable .thing.spam.deleted.link.self{
@@ -102,7 +105,6 @@ border: solid 2px #FA8072 !important;
 
 .keyHighlight, .RES-keyNav-activeElement, div .RES-keyNav-activeElement {
 	outline-width: 0px !important;
-	background-color: transparent!important;
 	border-right: 1px dotted #C1BFBF!important;
 }
 
@@ -216,76 +218,44 @@ a.title:visited:hover {
 
 /* Flair formatting flairs are labeled alphabetically  */
 
-.linkflair-a .linkflairlabel {
-	width: 105px;
-	text-align: center;
-	background-color: #e18879;
+.linkflairlabel {
+        display:block;
+	background-color: transparent;
 	font-size: 9px;
 	font-weight: bold;
 	border-width: 0px;
 	border-radius: 0px;
+	float: right;
+	color: #C1BFBF;
 }
 
-.linkflair-b .linkflairlabel {
-	width: 105px;
-	text-align: center;
-	background-color: #e1aa79;
-	font-size: 9px;
-	font-weight: bold;
-	border-width: 0px;
-	border-radius: 0px;
+.thing.linkflair.linkflair-a, .flairselector .linkflair-a {
+border-right: 10px solid #E18879;
 }
 
-.linkflair-c .linkflairlabel {
-	width: 105px;
-	text-align: center;
-	background-color: #bbe179;
-	font-size: 9px;
-	font-weight: bold;
-	border-width: 0px;
-	border-radius: 0px;
+.thing.linkflair.linkflair-b, .flairselector .linkflair-b {
+border-right: 10px solid #e1aa79;
 }
 
-.linkflair-d .linkflairlabel {
-	width: 105px;
-	text-align: center;
-	background-color: #79e1d1;
-	font-size: 9px;
-	font-weight: bold;
-	border-width: 0px;
-	border-radius: 0px;
+.thing.linkflair.linkflair-c, .flairselector .linkflair-c {
+border-right: 10px solid #bbe179;
 }
 
-.linkflair-e .linkflairlabel {
-	width: 105px;
-	text-align: center;
-	background-color: #e1db79;
-	font-size: 9px;
-	font-weight: bold;
-	border-width: 0px;
-	border-radius: 0px;
+.thing.linkflair.linkflair-d, .flairselector .linkflair-d {
+border-right: 10px solid #79e1d1;
 }
 
-.linkflair-f .linkflairlabel {
-	width: 105px;
-	text-align: center;
-	background-color: #b179e1;
-	font-size: 9px;
-	font-weight: bold;
-	border-width: 0px;
-	border-radius: 0px;
+.thing.linkflair.linkflair-e, .flairselector .linkflair-e {
+border-right: 10px solid #e1db79;
 }
 
-.linkflair-g .linkflairlabel {
-	width: 105px;
-	text-align: center;
-	background-color: #FCDFFF;
-	font-size: 9px;
-	font-weight: bold;
-	border-width: 0px;
-	border-radius: 0px;
+.thing.linkflair.linkflair-f, .flairselector .linkflair-f {
+border-right: 10px solid #b179e1;
 }
 
+.thing.linkflair.linkflair-g, .flairselector .linkflair-g {
+border-right: 10px solid #FCDFFF;
+}
 
 /* Listing of submissions */
 .expando {
@@ -339,7 +309,6 @@ body div.content {
 	overflow: hidden !important;
 	margin: 0px 20px 0px 0px!important;
 	padding: 5px 5px 10px 10px !important;
-	border-top: 1px solid #EEEEEE;
 	background-color: #FAFAFA;
 	min-height: 50px !important;
 	box-shadow: 0px 3px 3px 1px #A5B9CE;
@@ -349,7 +318,6 @@ body div.content {
 	overflow: hidden !important;
 	margin: 0px 20px 0px 0px!important;
 	padding: 5px 5px 10px 10px !important;
-	border-top: 1px solid #EEEEEE;
 	background-color: #F5F5F5;
 	min-height: 50px !important;
 	box-shadow: 0px 3px 3px 1px #A5B9CE;
@@ -662,7 +630,6 @@ body div.content {
 
 .content .tabmenu {
 	margin: 0px 0px 0px 20px !important;
-	overflow: auto;
 }
 
 .tabpane-content {
@@ -1096,20 +1063,24 @@ a[href$="#spoiler"][title]::before {
     padding: 5px;
 }
 
+.side .redditname {
+    margin-bottom: -27px !important;
+    padding-bottom: 29px !important;
+}
+
 .titlebox .fancy-toggle-button {
-    display:block;
     background-color:#F5F5F5;
     border-width:0px;
     margin: 0px;
     padding: 5px;
-    width: 290px;
+    width: auto;
     overflow: hidden;
 }
 
 .subButtons {
     width: 300px;
     padding: 0px;
-    height: 55px;
+    height: auto;
     display:block;
     background-color:#F5F5F5;
     border-width:0px;
@@ -1122,6 +1093,11 @@ a[href$="#spoiler"][title]::before {
     border: 0px;
     margin: 0px;
     padding: 5px;
+}
+
+.subscribers {
+margin-top: -29px!important;
+padding-top: 29px!important;
 }
 
 .side .tagline {
@@ -1277,4 +1253,4 @@ div.wiki div.toc>ul:before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.4.3 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.4.4 - (http://www.reddit.com/r/boxed/)== */
