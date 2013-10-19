@@ -1,56 +1,87 @@
-/* == Boxed reddit CSS Theme v1.4.4 - (http://www.reddit.com/r/boxed/)== */
-
-/* Things adjusted for usage with segoe UI. This section can be removed, the theme will then fall back on reddit's default font types.  */
-
-body {
-	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
-	font-weight: normal !important; 
-	font-size: x-small !important;
-}
-
-body .title {
-	font-size: 130% !important;
-}
-
-.pagename {
-	font-size: 100% !important;
-	text-transform: uppercase;
-}
-
-body #sr-header-area, body #sr-header-area a {
-	font-size: 103% !important;
-}
-
-.linkflairlabel {
-	font-size: 85% !important;
-}
-
-.entry .tagline { 
-	margin-top: 0px !important; 
-}
-
-.expando-button {
-	margin: 2px 5px 2px 0 !important;
-}
-
-
-.tabmenu li.selected a {
-	font-size: 110% !important;
-	font-weight: bold !important;
-}
-
-.tabmenu li a  {
-	font-size: 105% !important;
-}
-
-#header-bottom-left {
-	font-size: 100% !important;
-}
-/* Things adjusted for usage with segoe UI. This section can be removed, the theme will then fall back on reddit's default font types.  */
-
+/* == Boxed reddit CSS Theme v1.5 - (http://www.reddit.com/r/boxed/)== */
 
 /* General markup */
+/* Font family declaration, fonts can be changed here */
+body {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
+	font-weight: normal !important;
+}
 
+/* All font sizing is done in the following section */ 
+body, .wiki-page .md, body .side .md h6:nth-of-type(1) {
+	font-size: 16px !important;
+}
+
+.content .usertext-body .md,
+.side .sidecontentbox .helplink,
+.side .sidebox .morelink,
+.linkflairlabel
+ {
+	font-size: 14px;
+}
+
+.hover.pagename.redditname,
+.thing .title,
+.submit-page .roundfield .title {
+	font-size: 18px !important;
+}
+
+.side .titlebox, 
+#sr-header-area, 
+#header-bottom-left .tabmenu, .tabmenu.formtab, 
+#header-bottom-right, 
+.pref-lang,
+
+.side .usertext-body .md,
+.midcol,
+.panestack-title,
+.panestack-title .title,
+.menuarea,
+.commentarea .usertext-edit:before,
+.markdownEditor a,
+.commentingAs,
+.usertext-edit .bottom-area a,
+.comment-visits-box .title,
+.footer,
+.submit-page .roundfield,
+.submit-page .infobar,
+.submit-page .roundfield label,
+#RESDropdownOptions,
+#image-preview-list,
+#image-upload,
+.btn.right,
+.wiki-page .pageactions,
+#search-expando,
+body:not(.search-page) #search input[type="text"],
+#searchexpando,
+.raisedbox, 
+.searchpane,
+.hover-bubble,
+.deepthread {
+	font-size: 12px !important;
+}
+
+#header-bottom-right .userkarma,
+.side .linkinfo, 
+.side .linkinfo .number, 
+.side .linkinfo .word, 
+.side .linkinfo .shortlink, 
+.side .subscribe-button.fancy-toggle-button.toggle a,
+.side .subButtons span,
+.side .subscribers,
+.side .users-online,
+.side .leavemoderator,
+.side .titlebox .toggle,
+.tagline,
+body .side .title,
+.side .sidecontentbox,
+.account-activity-box,
+.tagline,
+.flat-list,
+.bottommenu,
+.submit-page .roundfield #suggested-reddits {
+	font-size: 10px !important;
+}
 /* reddit companion + sticky announcements fix */
 html {
 	position: relative;
@@ -65,8 +96,22 @@ body {
 	border-radius: 0px !important;
 }
 
+.hover.pagename.redditname {
+	display: inline-table;
+	letter-spacing: 2px;
+	font-variant: normal;
+	text-transform: capitalize;
+	font-weight: normal;
+}
+
 .hover.pagename.redditname > a:before {
-	content: "r/";
+	content: "/r/";
+	text-transform: none;
+}
+
+.hover.pagename.redditname a {
+	display: table-cell;
+	vertical-align: bottom;
 }
 
 input {
@@ -132,7 +177,7 @@ a.title:visited:hover {
 
 .sitetable .md {
 	max-width: 50em!important;
-	font-size: 1.1em !important;
+	
 }
 
 
@@ -141,11 +186,11 @@ a.title:visited:hover {
 
 #sr-header-area {
 	text-transform: lowercase;
-	font-size: 100% !important;
+	
 }
 
 #sr-header-area a {
-	font-size: 100% !important;
+	
 }
 
 #userbarToggle.userbarHide, #userbarToggle.userbarShow {
@@ -174,7 +219,7 @@ a.title:visited:hover {
 	background-color: #FFFFFF;
 	color: #333333;
 	border: 0px solid #9A9A9A !important;
-	top: 76px !important;
+	top: 75px !important;
 	height: 21px !important;
 	line-height: 21px !important;
 	vertical-align: middle !important;
@@ -182,12 +227,31 @@ a.title:visited:hover {
         margin-right: 20px;
 }
 
+#header-bottom-right * {
+	vertical-align: bottom !important;
+}
 #header-bottom-right a {
 	color: #333333;
 }
 
-#modmail { 
-	top: 1px !important;
+#header-bottom-right #mail {
+	margin: 0;
+	top: -5px !important;
+	margin-right: 3px;
+	bottom: auto;
+
+}
+
+#header-bottom-right #modmail {
+	margin: 0;
+
+	top: -2px !important;
+	bottom: auto;
+}
+
+
+#RESSettingsButton {
+margin: auto auto 2px;
 }
 
 /* Header tab menu */
@@ -201,7 +265,7 @@ a.title:visited:hover {
 	margin: 0px !important;
 	font-weight: normal;
 	padding: 0px 12px;
-	font-size: x-small;
+	
 }
 
 #header-bottom-left  .tabmenu li {
@@ -213,7 +277,7 @@ a.title:visited:hover {
 	background: #EFEFEF;
 	color: #333333;
 	border-left: 3px solid #4D6277 !important;
-	font-size: 100%;
+	
 }
 
 /* Flair formatting flairs are labeled alphabetically  */
@@ -221,7 +285,7 @@ a.title:visited:hover {
 .linkflairlabel {
         display:block;
 	background-color: transparent;
-	font-size: 9px;
+	
 	font-weight: bold;
 	border-width: 0px;
 	border-radius: 0px;
@@ -233,30 +297,56 @@ a.title:visited:hover {
 border-right: 10px solid #E18879;
 }
 
+.thing.linkflair.linkflair-a .linkflairlabel {
+border-bottom: solid 1px #E18879;
+}
+
 .thing.linkflair.linkflair-b, .flairselector .linkflair-b {
 border-right: 10px solid #e1aa79;
+}
+
+.thing.linkflair.linkflair-b .linkflairlabel {
+border-bottom: solid 1px #e1aa79;
 }
 
 .thing.linkflair.linkflair-c, .flairselector .linkflair-c {
 border-right: 10px solid #bbe179;
 }
 
+.thing.linkflair.linkflair-c .linkflairlabel {
+border-bottom: solid 1px #bbe179;
+}
 .thing.linkflair.linkflair-d, .flairselector .linkflair-d {
 border-right: 10px solid #79e1d1;
+}
+
+.thing.linkflair.linkflair-d .linkflairlabel {
+border-bottom: solid 1px #79e1d1;
 }
 
 .thing.linkflair.linkflair-e, .flairselector .linkflair-e {
 border-right: 10px solid #e1db79;
 }
 
+.thing.linkflair.linkflair-e .linkflairlabel {
+border-bottom: solid 1px #e1db79;
+}
+
 .thing.linkflair.linkflair-f, .flairselector .linkflair-f {
 border-right: 10px solid #b179e1;
+}
+
+.thing.linkflair.linkflair-f .linkflairlabel {
+border-bottom: solid 1px #b179e1;
 }
 
 .thing.linkflair.linkflair-g, .flairselector .linkflair-g {
 border-right: 10px solid #FCDFFF;
 }
 
+.thing.linkflair.linkflair-g .linkflairlabel {
+border-bottom: solid 1px #FCDFFF;
+}
 /* Listing of submissions */
 .expando {
 	border-bottom: dotted 1px #C1BFBF;
@@ -444,14 +534,14 @@ body div.content {
 	padding-bottom: 3px;
 	border-bottom: 1px dotted #C1BFBF;
 	font-weight: bold;
-	font-size: 115% !important;
+	
 }
 
 .md h3, .commentarea h3 {
 	padding-bottom: 3px;
 	border-bottom: 1px dotted #C1BFBF;
 	font-weight: bold;
-	font-size: 130% !important;
+	
 }
 
 .link .usertext .md {
@@ -575,7 +665,7 @@ body div.content {
 
 #siteTable blockquote:before, .noncollapsed .usertext blockquote:before {
 	content: '“';
-	font-size: 250%;
+	
 	font-family: Georgia, serif;
 	margin: 0;
 	position: relative;
@@ -586,12 +676,12 @@ body div.content {
 
 #siteTable blockquote, .noncollapsed .usertext blockquote p {
 	margin: 0;
-	font-size: 90%;
+	
 }
 
 #siteTable blockquote:after, .noncollapsed .usertext blockquote:after {
 	content: '”';
-	font-size: 250%;
+	
 	font-family: Georgia, serif;
 	text-align: right;
 	width: 98%;
@@ -839,7 +929,7 @@ a[href$="#spoiler"][title]::before {
 	background-color: white;
 	color: #363636;
 	text-align: center;
-	font-size: 11px;
+	
 	padding: 10px 0px 15px 0px;
 	border: 0;
 	width: 300px;
@@ -851,7 +941,7 @@ a[href$="#spoiler"][title]::before {
 }
 
 .linkinfo .downvotes .number, .linkinfo .upvotes .number, .linkinfo .score .number {
-	font-size: 20px !important;
+	
 	display: block;
 	font-weight: normal !important;
 }
@@ -861,14 +951,14 @@ a[href$="#spoiler"][title]::before {
 }
 
 .linkinfo .score {
-	font-size: 11px;
+	
 	display: block;
 	min-width: 80px;
 	margin-left: 30px !important;
 }
 
 .linkinfo .downvotes .word, .linkinfo .upvotes .word {
-	font-size: 11px;
+	
 }
 
 .linkinfo .upvotes, .linkinfo .downvotes, .linkinfo .score {
@@ -884,7 +974,7 @@ a[href$="#spoiler"][title]::before {
 
 .linkinfo .shortlink {
 	clear: both !important;
-	font-size: 10px;
+	
 	margin: 0px 20px 0px 20px;
 	border: 1px solid #E7E6E6;
 	text-align: center;
@@ -894,7 +984,7 @@ a[href$="#spoiler"][title]::before {
 	background: transparent;
 	border: 0px !important;
 	padding-left: 8px;
-	font-size: 12px;
+	
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -905,7 +995,7 @@ a[href$="#spoiler"][title]::before {
 	margin-bottom: 7px;
 	color: #333333;
 	background-color: #C9D6E2;
-	font-size: 12px;
+	
 }
 
 
@@ -934,7 +1024,7 @@ a[href$="#spoiler"][title]::before {
 	color: black;
 	background-color: #EFEFEF;
 	display: inline-block;
-	font-size: 14px;
+	
 	border: 0px;
 	border-bottom: 1px dotted #888888;
 	border-left: 3px solid #4D6277;
@@ -1068,24 +1158,7 @@ a[href$="#spoiler"][title]::before {
     padding-bottom: 29px !important;
 }
 
-.titlebox .fancy-toggle-button {
-    background-color:#F5F5F5;
-    border-width:0px;
-    margin: 0px;
-    padding: 5px;
-    width: auto;
-    overflow: hidden;
-}
 
-.subButtons {
-    width: 300px;
-    padding: 0px;
-    height: auto;
-    display:block;
-    background-color:#F5F5F5;
-    border-width:0px;
-    margin: 0px;
-}
 
 .styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.leavecontributor-button {
     display:block;
@@ -1132,19 +1205,20 @@ padding-top: 29px!important;
     border-radius: 0px !important;
 }
 
+.subButtons .RESshortcutside {
+    width: auto;
+    display: inline-block;
+}
 .RESshortcutside, .RESDashboardToggle {
     color: white;
     background-image: none !important;
-    background-image: none;
     background-color: #4D6277;
     border-radius: 0px !important;
-    margin-left: 5px;
 }
 
 .RESshortcutside:hover, .RESDashboardToggle :hover {
     color: white;
     background-image: none !important;
-    background-image: none;
     background-color: #4D6277 !important;
     border-radius: 0px !important;
 }
@@ -1152,7 +1226,6 @@ padding-top: 29px!important;
 .RESshortcutside.remove, .RESDashboardToggle.remove {
     color: white;
     background-image: none !important;
-    background-image: none;
     background-color: #DD513B;
     border-radius: 0px !important;
 }
@@ -1160,7 +1233,6 @@ padding-top: 29px!important;
 .RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover {
     color: white;
     background-image: none !important;
-    background-image: none;
     background-color: #DD513B !important;
     border-radius: 0px !important;
 }
@@ -1175,7 +1247,7 @@ padding-top: 29px!important;
     box-shadow: 0px 1px 3px 1px #A5B9CE;
     background:#FFFFFF;
     text-align:left;
-    font-size:15px;
+    
     color:#333333;
     font-weight:bold;
     padding:7px 7px 7px 27px;
@@ -1244,7 +1316,7 @@ div.wiki div.toc>ul:before {
 }
 
 .toc a {
-    font-size: small !important;
+    
 }
 
 .toc {
@@ -1253,4 +1325,4 @@ div.wiki div.toc>ul:before {
 	border-color: #C1BFBF;
 }
 
-/* ==Boxed reddit CSS Theme v1.4.4 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.5 - (http://www.reddit.com/r/boxed/)== */
