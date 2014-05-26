@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.6.0 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.6.1 - (http://www.reddit.com/r/boxed/)== */
 
 /* Font family declaration, fonts can be changed here */
 body {
@@ -364,6 +364,10 @@ a.title:visited:hover {
 
 
 /* Listing of submissions */
+.thumbnail {
+    margin-top: 10px;
+}
+
 .expando {
     border-bottom: dotted 1px #C1BFBF;
 }
@@ -2838,4 +2842,4 @@ a[href='#icon-zoom-out']::before {
     background-position: 0 -12818px;
 } 
 
-/* ==Boxed reddit CSS Theme v1.6.0 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.6.1 - (http://www.reddit.com/r/boxed/)== */
