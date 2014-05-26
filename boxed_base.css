@@ -605,6 +605,9 @@ body div.content {
     color: gray;
     top: -20px;
     left: -30px;
+    padding-left: 18px;
+    background: url(%%sprite-icon-16%%) no-repeat top left;
+    background-position: 0 -2516px;
 }
 
 .md pre:before {
@@ -645,35 +648,50 @@ body div.content {
 }
 
 /* nested commentary boxes, credits for this piece of code go to someone else */
+.res-commentBoxes.res-commentBoxes-rounded .comment {
+    border-radius: 0px !important;
+}
 
 .comment .child, .comment .showreplies {
-    border-left: 0px !important;
+	border-left: 0px !important;
 }
 
 .comment {
-    margin-left: 10px !important;
-    margin-right: 5px!important;
-    margin-top: 0!important;
-    margin-bottom: 8px !important;
-    background-color: #ffffff !important;
-    border: 1px solid #e6e6e6 !important;
-    padding: 5px 8px 0 5px!important;
+	margin-left: 10px !important;
+	margin-right: 5px!important;
+	margin-top: 0!important;
+	margin-bottom: 8px !important;
+	background-color: #ffffff !important;
+	border: 1px solid #e6e6e6 !important;
+	padding: 5px 8px 0 5px!important;
 }
 
 .comment,
 .comment .comment .comment,
 .comment .comment .comment .comment .comment,
 .comment .comment .comment .comment .comment .comment .comment,
-.comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background-color: #fff !important;
+.comment .comment .comment .comment .comment .comment .comment .comment .comment, 
+.res-commentBoxes .content .comment,
+.res-commentBoxes .content .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment
+{
+	background-color: #fff !important;
 }
 
 .comment .comment,
 .comment .comment .comment .comment,
 .comment .comment .comment .comment .comment .comment,
 .comment .comment .comment .comment .comment .comment .comment .comment,
-.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background-color: #F7F7F8!important;
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment, 
+.res-commentBoxes .content .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+{
+	background-color: #F7F7F8!important;
 }
 
 
