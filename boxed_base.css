@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.6.1 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.6.2 - (http://www.reddit.com/r/boxed/)== */
 
 /* Font family declaration, fonts can be changed here */
 body {
@@ -24,6 +24,9 @@ body, .wiki-page .md, body .side .md h6:nth-of-type(1) {
     font-size: 18px !important;
 }
 
+.side .linkinfo, 
+.side .linkinfo .number, 
+.side .linkinfo .word, 
 .side .titlebox, 
 #sr-header-area, 
 #header-bottom-left .tabmenu, .tabmenu.formtab, 
@@ -59,9 +62,6 @@ body:not(.search-page) #search input[type="text"],
 }
 
 #header-bottom-right .userkarma,
-.side .linkinfo, 
-.side .linkinfo .number, 
-.side .linkinfo .word, 
 .side .linkinfo .shortlink, 
 .side .subscribe-button.fancy-toggle-button.toggle a,
 .side .subButtons span,
@@ -91,7 +91,6 @@ body .side .title,
 .md h3, .commentarea h3 {
     font-size: 1em;
 }
-
 
 /* General markup */
 /* reddit companion + sticky announcements fix */
@@ -977,12 +976,8 @@ a[href$="#spoiler"][title]::before {
 }
 
 .linkinfo .downvotes .number, .linkinfo .upvotes .number, .linkinfo .score .number {
-    display: block;
     font-weight: normal !important;
-}
-
-.linkinfo .score .word {
-    display: none;
+    
 }
 
 .linkinfo .score {
@@ -991,19 +986,12 @@ a[href$="#spoiler"][title]::before {
     margin-left: 30px !important;
 }
 
-.linkinfo .downvotes .word, .linkinfo .upvotes .word {
-}
-
 .linkinfo .upvotes, .linkinfo .downvotes, .linkinfo .score {
-    float: left;
     padding: 5px 10px 5px 0;
     margin: 8px 10px 10px 0;
     text-align: center;
 }
 
-.linkinfo .score, .linkinfo .upvotes {
-    border-right: 1px solid #C1BFBF;
-}
 
 .linkinfo .shortlink {
     clear: both !important;
@@ -1025,9 +1013,8 @@ a[href$="#spoiler"][title]::before {
     margin-top: -10px;
     margin-bottom: 7px;
     color: #333333;
-    background-color: #C9D6E2;
+    background-color: #CEE3F8;
 }
-
 
 /* sidebar dropdown menus */
 .titlebox .md ul {
@@ -2842,4 +2829,4 @@ a[href='#icon-zoom-out']::before {
     background-position: 0 -12818px;
 } 
 
-/* ==Boxed reddit CSS Theme v1.6.1 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.6.2 - (http://www.reddit.com/r/boxed/)== */
