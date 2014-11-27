@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.6.2 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.7.0 - (http://www.reddit.com/r/boxed/)== */
 
 /* Font family declaration, fonts can be changed here */
 body {
@@ -80,17 +80,22 @@ body .side .title,
     font-size: 10px !important;
 }
 
-.md h1, .commentarea h1 {
+.md h1, .commentarea h1,.wiki-page-content .md .wiki h1 {
+    font-size: 1.6em !important;
+    font-weight: bold;
+}
+
+.md h2, .commentarea h2,.wiki-page-content .md .wiki h2 {
     font-size: 1.4em;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.md h2, .commentarea h2 {
+.md h3, .commentarea h3, .wiki-page .wiki-page-content .md .wiki h3 {
     font-size: 1.2em;
+    font-weight: bold;
 }
 
-.md h3, .commentarea h3 {
-    font-size: 1em;
-}
 
 /* General markup */
 /* reddit companion + sticky announcements fix */
@@ -189,6 +194,11 @@ a.title:visited:hover {
 .sitetable .md {
     max-width: 50em !important;
 }
+
+.comment .usertext-body .md, .self .usertext-body .md, .side .md, .md.wiki {
+    line-height: 1.5em!important;
+}
+
 
 /* Header markup */
 
@@ -363,12 +373,12 @@ a.title:visited:hover {
 
 
 /* Listing of submissions */
-.thumbnail {
-    margin-top: 10px;
-}
-
 .expando {
     border-bottom: dotted 1px #C1BFBF;
+}
+
+.thumbnail {
+    margin-top: 10px;
 }
 
 .expando-button {
@@ -586,16 +596,23 @@ body div.content {
 /* code numbering, based on the css found at /r/modtools */
 .md pre {
     background-color: #F5F5F5 !important;
+    border: 0;
+    overflow: visible !important;
     border-left: 31px solid #4D6277;
+    padding: 0;
     position: relative;
     margin-top: 25px;
     line-height: 15px;
     font-family: "Courier New",courier,monospace;
-    box-shadow: 0px 1px 3px 1px #F5F5F5;
+}
+
+.md.wiki pre {
+    margin-right: 400px;
 }
 
 .md pre code {
-    padding: 15px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
     overflow: auto;
     display: block;
     line-height: 15px;
@@ -653,20 +670,21 @@ body div.content {
 /* nested commentary boxes, credits for this piece of code go to someone else */
 .res-commentBoxes.res-commentBoxes-rounded .comment {
     border-radius: 0px !important;
+    border: 0 !important;
 }
 
 .comment .child, .comment .showreplies {
-	border-left: 0px !important;
+    border-left: 0px !important;
 }
 
 .comment {
-	margin-left: 10px !important;
-	margin-right: 5px!important;
-	margin-top: 0!important;
-	margin-bottom: 8px !important;
-	background-color: #ffffff !important;
-	border: 1px solid #e6e6e6 !important;
-	padding: 5px 8px 0 5px!important;
+    margin-left: 10px !important;
+    margin-right: 5px!important;
+    margin-top: 0!important;
+    margin-bottom: 8px !important;
+    background-color: #ffffff !important;
+    border: 0px;
+    padding: 5px 8px 0 5px!important;
 }
 
 .comment,
@@ -678,9 +696,8 @@ body div.content {
 .res-commentBoxes .content .comment .comment .comment,
 .res-commentBoxes .content .comment .comment .comment .comment .comment,
 .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment,
-.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment
-{
-	background-color: #fff !important;
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #fff !important;
 }
 
 .comment .comment,
@@ -692,9 +709,8 @@ body div.content {
 .res-commentBoxes .content .comment .comment .comment .comment,
 .res-commentBoxes .content .comment .comment .comment .comment .comment .comment,
 .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment,
-.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
-{
-	background-color: #F7F7F8!important;
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #F7F7F8!important;
 }
 
 
@@ -900,12 +916,21 @@ a[href$="#spoiler"][title]::before {
     display: none !important;
 }
 
-#search {
-    text-align: center;
+body .side .md p, body .side .md blockquote {
+    margin: 5px 0 !important;
+    color: #000;
+}
+
+.side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol {
+    line-height: 1.5em!important;
 }
 
 #search input[type="text"] {
     border: 1px solid #C1BFBF;
+}
+
+#search input[type=submit] {
+    border: 0 !important;
 }
 
 .side .md {
@@ -928,6 +953,8 @@ a[href$="#spoiler"][title]::before {
 
 .side hr {
     visibility: hidden;
+    height: 0;
+    margin: 1;
 }
 
 .side blockquote {
@@ -977,7 +1004,6 @@ a[href$="#spoiler"][title]::before {
 
 .linkinfo .downvotes .number, .linkinfo .upvotes .number, .linkinfo .score .number {
     font-weight: normal !important;
-    
 }
 
 .linkinfo .score {
@@ -991,7 +1017,6 @@ a[href$="#spoiler"][title]::before {
     margin: 8px 10px 10px 0;
     text-align: center;
 }
-
 
 .linkinfo .shortlink {
     clear: both !important;
@@ -1016,9 +1041,11 @@ a[href$="#spoiler"][title]::before {
     background-color: #CEE3F8;
 }
 
+
 /* sidebar dropdown menus */
 .titlebox .md ul {
     margin: 0;
+    padding: 0;
 }
 
 .titlebox ul li {
@@ -1214,9 +1241,10 @@ a[name=content] {
     text-align: left;
     color: #333333;
     font-weight: bold;
-    padding: 7px 7px 7px 27px;
+    padding: 6px 5px 7px 27px;
     right: 20px;
     z-index: 2;
+    margin: 0;
 }
 
 /* wiki formatting */
@@ -2829,4 +2857,4 @@ a[href='#icon-zoom-out']::before {
     background-position: 0 -12818px;
 } 
 
-/* ==Boxed reddit CSS Theme v1.6.2 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.7.0 - (http://www.reddit.com/r/boxed/)== */
