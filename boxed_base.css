@@ -613,6 +613,7 @@ body div.content {
 .md pre code {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
+    padding-left: 5px;
     overflow: auto;
     display: block;
     line-height: 15px;
@@ -921,7 +922,7 @@ body .side .md p, body .side .md blockquote {
     color: #000;
 }
 
-.side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol {
+.side .md .-blocks, .side .md .-lists, .side .md blockquote, .side .md table, .side .md p, .side .md ul, .side .md ol {
     line-height: 1.5em!important;
 }
 
