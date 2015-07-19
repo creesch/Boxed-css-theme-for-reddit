@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.7.0 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.8.0 - (http://www.reddit.com/r/boxed/)== */
 
 /* Font family declaration, fonts can be changed here */
 body {
@@ -1134,7 +1134,7 @@ body .side .md p, body .side .md blockquote {
     padding-bottom: 29px !important;
 }
 
-.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.leavecontributor-button {
+.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.leavecontributor-button .toggle.sr_style_toggle {
     display: block;
     background-color: #F5F5F5 !important;
     border: 0px;
@@ -1157,7 +1157,7 @@ body .side .md p, body .side .md blockquote {
     padding: 5px;
 }
 
-.side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body) {
+.side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body):not(.throbber) {
     display: block !important;
     background-color: #F5F5F5;
     border: 0 !important;
@@ -2858,4 +2858,4 @@ a[href='#icon-zoom-out']::before {
     background-position: 0 -12818px;
 } 
 
-/* ==Boxed reddit CSS Theme v1.7.0 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.8.0 - (http://www.reddit.com/r/boxed/)== */
