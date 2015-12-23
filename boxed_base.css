@@ -1,4 +1,4 @@
-/* == Boxed reddit CSS Theme v1.8.0 - (http://www.reddit.com/r/boxed/)== */
+/* == Boxed reddit CSS Theme v1.9.0 - (http://www.reddit.com/r/boxed/)== */
 
 /* Font family declaration, fonts can be changed here */
 body {
@@ -236,7 +236,7 @@ a.title:visited:hover {
     height: 21px !important;
     line-height: 21px !important;
     vertical-align: middle!important;
-    padding: 6px 3px 4px 5px !important;
+    padding: 4px 3px 6px 10px!important;
     margin-right: 20px;
 }
 
@@ -265,6 +265,17 @@ a.title:visited:hover {
     margin: auto auto 2px;
 }
 
+/* beta icon */
+a.beta-link {
+    top: 4px;
+}
+
+
+.res #header-bottom-right #userbarToggle+* {
+    margin-left: 0;
+}
+
+
 /* Header tab menu */
 
 #header-bottom-left  .tabmenu li a {
@@ -288,6 +299,13 @@ a.title:visited:hover {
     color: #333333;
     border-left: 3px solid #4D6277 !important;
 }
+
+
+/* 
+
+Listing of submissions 
+
+*/
 
 /* Link Flair formatting, flairs are labeled alphabetically adding a flair is simple.  */
 
@@ -371,8 +389,15 @@ a.title:visited:hover {
     border-bottom: solid 2px #FCDFFF;
 }
 
+/* Fix for advertisements screwing with alignment*/
+.content[role="main"] .spacer:first-child {
+    margin-bottom: 0;
+}
 
-/* Listing of submissions */
+.content[role="main"] #siteTable_organic {
+    margin-left: 20px;
+}
+
 .expando {
     border-bottom: dotted 1px #C1BFBF;
 }
@@ -2858,4 +2883,4 @@ a[href='#icon-zoom-out']::before {
     background-position: 0 -12818px;
 } 
 
-/* ==Boxed reddit CSS Theme v1.8.0 - (http://www.reddit.com/r/boxed/)== */
+/* ==Boxed reddit CSS Theme v1.9.0 - (http://www.reddit.com/r/boxed/)== */
