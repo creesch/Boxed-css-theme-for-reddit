@@ -85,7 +85,7 @@ https://github.com/creesch/Boxed-css-theme-for-reddit/blob/master/boxed_base.css
 In order to also get the announcement bar you have to do the following: 
 
 1. Go to subreddit settings (about/edit/ so for boxed http://www.reddit.com/r/boxed/about/edit/)
-2. Go the the text field with the "Sidebar" header. 
+2. Go to the text field with the "Sidebar" header. 
 3. Enter something that looks like this: 
 
          ### My announcement text here 
