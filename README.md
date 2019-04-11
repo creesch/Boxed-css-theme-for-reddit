@@ -5,6 +5,9 @@ A subreddit theme to be used by subreddit owners on www.reddit.com
 
 upload sprite-icon-16.png before saving the stylesheet.
 
+Demo on [/r/boxed](http://reddit.com/r/boxed)
+
+![/r/boxed](https://i.imgur.com/os5ZDgt.png)
 
 
 # CSS basics
@@ -91,5 +94,3 @@ In order to also get the announcement bar you have to do the following:
          ### My announcement text here 
 4. Click "Save options" 
 5. Done! Your subreddit is now styled with /r/boxed! 
-
-
