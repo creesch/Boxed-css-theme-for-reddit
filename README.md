@@ -59,7 +59,7 @@ or once again if you need the specific kind of element
     }
 
 You can read more about it here if you want: http://www.w3schools.com/css/css_syntax.asp 
-
+CSS Cheat Sheet - Learn CSS(Basic to Advanced Concepts): https://www.interviewbit.com/css-cheat-sheet/
 And this video nicely shows how you can use the chrome inspector tools (similar available in firefox) to try out and tweak css: 
 https://www.youtube.com/watch?v=sdLxvD23uhY
 
